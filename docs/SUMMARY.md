@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Distribution](distribution/README.md)
-  * [Basic](distribution/distriuted-basis.md)
+  * [Basic](distribution/distributed-basis.md)
 * [Example](README.md)
   * [Example1](README.md)
     * [Example11](README.md)
