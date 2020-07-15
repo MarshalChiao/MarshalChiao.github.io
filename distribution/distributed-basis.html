@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Basic · GitBook</title>
+        <title>分布式基础 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -107,7 +107,7 @@
                 <span>
             
                     
-                    Distribution
+                    分布式
             
                 </a>
             
@@ -121,7 +121,7 @@
                 <a href="distributed-basis.html">
             
                     
-                    Basic
+                    分布式基础
             
                 </a>
             
@@ -247,7 +247,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Basic</a>
+        <a href=".." >分布式基础</a>
     </h1>
 </div>
 
@@ -262,15 +262,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="base&#x7406;&#x8BBA;">BASE&#x7406;&#x8BBA;</h1>
+                                <h1 id="&#x5206;&#x5E03;&#x5F0F;&#x57FA;&#x7840;">&#x5206;&#x5E03;&#x5F0F;&#x57FA;&#x7840;</h1>
+<h2 id="base&#x7406;&#x8BBA;">BASE&#x7406;&#x8BBA;</h2>
 <p>BASE &#x662F;&#x57FA;&#x672C;&#x53EF;&#x7528;&#xFF08;Basically Available&#xFF09;&#x3001;&#x8F6F;&#x72B6;&#x6001;&#xFF08;Soft State&#xFF09;&#x548C;&#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;&#xFF08;Eventually Consistent&#xFF09;&#x4E09;&#x4E2A;&#x77ED;&#x8BED;&#x7684;&#x7F29;&#x5199;&#x3002;</p>
 <p>BASE &#x7406;&#x8BBA;&#x662F;&#x5BF9; CAP &#x4E2D;&#x4E00;&#x81F4;&#x6027;&#x548C;&#x53EF;&#x7528;&#x6027;&#x6743;&#x8861;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5B83;&#x7684;&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x662F;&#xFF1A;&#x5373;&#x4F7F;&#x65E0;&#x6CD5;&#x505A;&#x5230;&#x5F3A;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x4F46;&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x90FD;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x8EAB;&#x4E1A;&#x52A1;&#x7279;&#x70B9;&#xFF0C;&#x91C7;&#x7528;&#x9002;&#x5F53;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x4F7F;&#x7CFB;&#x7EDF;&#x8FBE;&#x5230;&#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;&#x3002;</p>
-<h2 id="&#x57FA;&#x672C;&#x53EF;&#x7528;">&#x57FA;&#x672C;&#x53EF;&#x7528;</h2>
+<h3 id="&#x57FA;&#x672C;&#x53EF;&#x7528;">&#x57FA;&#x672C;&#x53EF;&#x7528;</h3>
 <p>&#x6307;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x5728;&#x51FA;&#x73B0;&#x6545;&#x969C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4FDD;&#x8BC1;&#x6838;&#x5FC3;&#x53EF;&#x7528;&#xFF0C;&#x5141;&#x8BB8;&#x635F;&#x5931;&#x90E8;&#x5206;&#x53EF;&#x7528;&#x6027;&#x3002;</p>
 <p>&#x4F8B;&#x5982;&#xFF0C;&#x7535;&#x5546;&#x5728;&#x505A;&#x4FC3;&#x9500;&#x65F6;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x8D2D;&#x7269;&#x7CFB;&#x7EDF;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#xFF0C;&#x90E8;&#x5206;&#x6D88;&#x8D39;&#x8005;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x5F15;&#x5BFC;&#x5230;&#x4E00;&#x4E2A;&#x964D;&#x7EA7;&#x7684;&#x9875;&#x9762;&#x3002;</p>
-<h2 id="&#x8F6F;&#x72B6;&#x6001;">&#x8F6F;&#x72B6;&#x6001;</h2>
+<h3 id="&#x8F6F;&#x72B6;&#x6001;">&#x8F6F;&#x72B6;&#x6001;</h3>
 <p>&#x6307;&#x5141;&#x8BB8;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5B58;&#x5728;&#x4E2D;&#x95F4;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x8BA4;&#x4E3A;&#x8BE5;&#x4E2D;&#x95F4;&#x72B6;&#x6001;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x7CFB;&#x7EDF;&#x6574;&#x4F53;&#x53EF;&#x7528;&#x6027;&#xFF0C;&#x5373;&#x5141;&#x8BB8;&#x7CFB;&#x7EDF;&#x4E0D;&#x540C;&#x8282;&#x70B9;&#x7684;&#x6570;&#x636E;&#x526F;&#x672C;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x540C;&#x6B65;&#x7684;&#x8FC7;&#x7A0B;&#x5B58;&#x5728;&#x65F6;&#x5EF6;&#x3002;</p>
-<h2 id="&#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;">&#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;</h2>
+<h3 id="&#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;">&#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;</h3>
 <p>&#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;&#x5F3A;&#x8C03;&#x7684;&#x662F;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x526F;&#x672C;&#xFF0C;&#x5728;&#x7ECF;&#x8FC7;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x7684;&#x540C;&#x6B65;&#x540E;&#xFF0C;&#x6700;&#x7EC8;&#x80FD;&#x8FBE;&#x5230;&#x4E00;&#x81F4;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
 <p>ACID(&#x4E8B;&#x52A1;&#x56DB;&#x5927;&#x7279;&#x6027;&#xFF1A;&#x539F;&#x5B50;&#x6027;atomicity&#x3001;&#x4E00;&#x81F4;&#x6027;consistency&#x3001;&#x9694;&#x79BB;&#x6027;isolation&#x3001;&#x6301;&#x4E45;&#x6027;durability) &#x8981;&#x6C42;&#x5F3A;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x901A;&#x5E38;&#x8FD0;&#x7528;&#x5728;&#x4F20;&#x7EDF;&#x7684;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x4E0A;&#x3002;&#x800C; BASE &#x8981;&#x6C42;&#x6700;&#x7EC8;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x901A;&#x8FC7;&#x727A;&#x7272;&#x5F3A;&#x4E00;&#x81F4;&#x6027;&#x6765;&#x8FBE;&#x5230;&#x53EF;&#x7528;&#x6027;&#xFF0C;&#x901A;&#x5E38;&#x8FD0;&#x7528;&#x5728;&#x5927;&#x578B;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;</p>
 <p>&#x5728;&#x5B9E;&#x9645;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x4E0D;&#x540C;&#x4E1A;&#x52A1;&#x5355;&#x5143;&#x548C;&#x7EC4;&#x4EF6;&#x5BF9;&#x4E00;&#x81F4;&#x6027;&#x7684;&#x8981;&#x6C42;&#x662F;&#x4E0D;&#x540C;&#x7684;&#xFF0C;&#x56E0;&#x6B64; ACID &#x548C; BASE &#x5F80;&#x5F80;&#x4F1A;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;</p>
@@ -301,7 +302,7 @@
 
             
                 
-                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: Distribution">
+                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: 分布式">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -317,7 +318,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Basic","level":"1.2.1","depth":2,"next":{"title":"Example","level":"1.3","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Example1","level":"1.3.1","depth":2,"path":"README.md","ref":"README.md","articles":[{"title":"Example11","level":"1.3.1.1","depth":3,"path":"README.md","ref":"README.md","articles":[]}]},{"title":"Example2","level":"1.3.2","depth":2,"path":"README.md","ref":"README.md","articles":[{"title":"Example21","level":"1.3.2.1","depth":3,"path":"README.md","ref":"README.md","articles":[]}]}]},"previous":{"title":"Distribution","level":"1.2","depth":1,"path":"distribution/README.md","ref":"distribution/README.md","articles":[{"title":"Basic","level":"1.2.1","depth":2,"path":"distribution/distributed-basis.md","ref":"distribution/distributed-basis.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"distribution/distributed-basis.md","mtime":"2020-07-15T08:34:13.666Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-15T08:34:44.451Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"分布式基础","level":"1.2.1","depth":2,"next":{"title":"Example","level":"1.3","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Example1","level":"1.3.1","depth":2,"path":"README.md","ref":"README.md","articles":[{"title":"Example11","level":"1.3.1.1","depth":3,"path":"README.md","ref":"README.md","articles":[]}]},{"title":"Example2","level":"1.3.2","depth":2,"path":"README.md","ref":"README.md","articles":[{"title":"Example21","level":"1.3.2.1","depth":3,"path":"README.md","ref":"README.md","articles":[]}]}]},"previous":{"title":"分布式","level":"1.2","depth":1,"path":"distribution/README.md","ref":"distribution/README.md","articles":[{"title":"分布式基础","level":"1.2.1","depth":2,"path":"distribution/distributed-basis.md","ref":"distribution/distributed-basis.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"distribution/distributed-basis.md","mtime":"2020-07-15T08:42:55.987Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-15T08:43:34.788Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

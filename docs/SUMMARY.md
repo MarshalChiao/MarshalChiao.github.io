@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Distribution](distribution/README.md)
-  * [Basic](distribution/distributed-basis.md)
+* [分布式](distribution/README.md)
+  * [分布式基础](distribution/distributed-basis.md)
 * [Example](README.md)
   * [Example1](README.md)
     * [Example11](README.md)
